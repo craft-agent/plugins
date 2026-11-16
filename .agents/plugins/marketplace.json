@@ -1,0 +1,120 @@
+{
+  "name": "craft-agent",
+  "interface": {
+    "displayName": "craft-agent"
+  },
+  "plugins": [
+    {
+      "name": "github-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/github-tools.git",
+        "ref": "v0.15.0",
+        "sha": "42c78684877a0612e0653b200cbd814977918681"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "git-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/git-tools.git",
+        "ref": "v0.4.0",
+        "sha": "ff4b71686311a2663b048e7080afd735095a8f95"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "cloudflare-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/cloudflare-tools.git",
+        "ref": "v0.12.0",
+        "sha": "03445541529ca7140a073d5869d4a57fe5630847"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "discord-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/discord-tools.git",
+        "ref": "v1.2.0",
+        "sha": "9d2ae4fb9341716643a0bfeb4610d0bc0011cdc9"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "telegram-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/telegram-tools.git",
+        "ref": "v0.5.0",
+        "sha": "3da495777756d35225dedf7ba9f971105e59a096"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "whatsapp-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/whatsapp-tools.git",
+        "ref": "v0.3.0",
+        "sha": "6ade700c3228245e39661df796cfa57fd9ce6a62"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "signal-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/signal-tools.git",
+        "ref": "v0.6.0",
+        "sha": "3ed6282e1af0bf4f6d9d4a823f7bba2e487c21bb"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "x-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/craft-agent/x-tools.git",
+        "ref": "v0.1.1",
+        "sha": "f95e2c0442eeaf735bc8d2ac8d3823be79e55db4"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
