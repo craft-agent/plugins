@@ -12,8 +12,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/github-tools.git",
-        "ref": "v0.15.0",
-        "sha": "42c78684877a0612e0653b200cbd814977918681"
+        "ref": "v0.15.1",
+        "sha": "97486f73dbf889b89c16f637b3cce39a24cf3c34"
       },
       "description": "GitHub tools for coding agents: issues, boards, pull requests, repositories, releases and Actions.",
       "category": "development"
@@ -23,8 +23,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/git-tools.git",
-        "ref": "v0.4.0",
-        "sha": "ff4b71686311a2663b048e7080afd735095a8f95"
+        "ref": "v0.4.1",
+        "sha": "44d7385318a0e7f1c73c2cb5cdf1c5dbe49ed670"
       },
       "description": "Git tools for coding agents: state, commits, rewrites and stacked branches, worktrees and pushing.",
       "category": "development"
@@ -34,8 +34,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/cloudflare-tools.git",
-        "ref": "v0.12.0",
-        "sha": "03445541529ca7140a073d5869d4a57fe5630847"
+        "ref": "v0.12.1",
+        "sha": "9905fef30529b7e74fd6f1545356028b65c660e7"
       },
       "description": "Cloudflare tools for coding agents: zones, DNS, analytics, Workers, Pages, storage and tunnels.",
       "category": "development"
@@ -45,8 +45,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/discord-tools.git",
-        "ref": "v1.2.0",
-        "sha": "9d2ae4fb9341716643a0bfeb4610d0bc0011cdc9"
+        "ref": "v1.2.1",
+        "sha": "0b96134624d70159a4d55bfe89b0bc2f111bc543"
       },
       "description": "Discord tools for coding agents: chats, messages, search, inbox, files, sends and roles.",
       "category": "development"
@@ -56,8 +56,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/telegram-tools.git",
-        "ref": "v0.5.0",
-        "sha": "3da495777756d35225dedf7ba9f971105e59a096"
+        "ref": "v0.5.1",
+        "sha": "19e11d882218ca9b1d83e88726c80d042c5766ad"
       },
       "description": "Unofficial Telegram tools for coding agents: chats, messages, received files and sends.",
       "category": "development"
@@ -67,8 +67,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/whatsapp-tools.git",
-        "ref": "v0.3.0",
-        "sha": "6ade700c3228245e39661df796cfa57fd9ce6a62"
+        "ref": "v0.3.1",
+        "sha": "5465b4fdf9ef3899986d70ae2a86454dbb7c59ff"
       },
       "description": "WhatsApp tools for coding agents: chats, contacts, history, received files, sends and actions.",
       "category": "development"
@@ -78,8 +78,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/signal-tools.git",
-        "ref": "v0.6.0",
-        "sha": "3ed6282e1af0bf4f6d9d4a823f7bba2e487c21bb"
+        "ref": "v0.6.1",
+        "sha": "2a41cd2742d834cfa9644ade38d3a28bd19b4ef2"
       },
       "description": "Signal tools for coding agents: chats, messages, contacts, received files and sends.",
       "category": "development"
@@ -89,8 +89,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/craft-agent/x-tools.git",
-        "ref": "v0.1.1",
-        "sha": "f95e2c0442eeaf735bc8d2ac8d3823be79e55db4"
+        "ref": "v0.1.2",
+        "sha": "6823f79256222fe199be5be90e3f245a9d594629"
       },
       "description": "Unofficial X tools for coding agents: read posts and profiles, save post media, never write to X.",
       "category": "development"
