@@ -1,0 +1,17 @@
+{
+  "name": "craft-agent",
+  "description": "Tool packages for coding agents by craft-agent.",
+  "owner": { "name": "craftsamo", "url": "https://github.com/craft-agent" },
+  "displayName": "craft-agent",
+  "packages": [
+    "craft-agent/github-tools",
+    "craft-agent/git-tools",
+    "craft-agent/cloudflare-tools",
+    "craft-agent/discord-tools",
+    "craft-agent/telegram-tools",
+    "craft-agent/whatsapp-tools",
+    "craft-agent/signal-tools",
+    "craft-agent/google-tools",
+    "craft-agent/x-tools"
+  ]
+}

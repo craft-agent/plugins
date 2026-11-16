@@ -1,0 +1,51 @@
+name: Update catalog
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+# The push below uses the deploy key, not the workflow token.
+permissions:
+  contents: read
+
+# Two runs never overlap: the second would push over the first.
+concurrency:
+  group: update-catalog
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Pin the latest releases
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # The deploy key `repo-kit setup github` provisions may bypass the main
+      # ruleset, so the push needs no pull request.
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          ssh-key: ${{ secrets.RELEASE_DEPLOY_KEY }}
+      - name: Use Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          package-manager-cache: false
+      - name: Generate the marketplaces
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/generate.mjs | tee "$RUNNER_TEMP/summary.txt"
+          # The commit body is the per-package lines, without the per-file ones.
+          grep -v -e ' changed$' -e ' unchanged$' "$RUNNER_TEMP/summary.txt" > "$RUNNER_TEMP/message-body.txt" || true
+      - name: Commit and push the change
+        run: |
+          if [[ -z "$(git status --porcelain -- .claude-plugin/marketplace.json .agents/plugins/marketplace.json)" ]]; then
+            echo "The pins are current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .claude-plugin/marketplace.json .agents/plugins/marketplace.json
+          git commit -m "chore(catalog): pin the latest releases" -m "$(cat "$RUNNER_TEMP/message-body.txt")"
+          git push origin HEAD:main
